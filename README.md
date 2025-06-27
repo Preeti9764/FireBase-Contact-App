@@ -1,5 +1,7 @@
 # React + Vite
 
+Hey, this is an app to save your contacts. you can add contact , delete contacts, or either can edit them. I have used firebase database to store the contacts.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
