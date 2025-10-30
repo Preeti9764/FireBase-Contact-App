@@ -5,8 +5,8 @@ const Modal = ({ onClose, isOpen, children }) => {
   return createPortal(
     <>
       {isOpen && (
-        <div className="absolute top-0 z-40 grid h-screen w-screen place-items-center backdrop-blur">
-          <div className="relative z-50 m-auto min-h-[200px] min-w-[80%] bg-white p-4">
+        <div className="fixed top-0 left-0 z-40 flex h-screen w-screen items-center justify-center backdrop-blur-md bg-gradient-to-tr from-orange-100/80 via-white/70 to-amber-200/70 transition-opacity duration-300" onClick={onClose}>
+          <div className="relative z-50 min-h-[200px] min-w-[320px] bg-white p-6 rounded-2xl shadow-xl animate-fadeIn" onClick={e => e.stopPropagation()}>
             <div className="flex justify-end">
               <AiOutlineClose onClick={onClose} className="self-end text-2xl" />
             </div>
